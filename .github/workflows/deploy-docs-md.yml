@@ -1,0 +1,41 @@
+name: Deploy Docs MD
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      subdomain: ${{ steps.vars.outputs.subdomain }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Derive subdomain
+        id: vars
+        run: echo "subdomain=$(echo ${{ github.event.repository.name }} | sed 's/-docs$//')" >> $GITHUB_OUTPUT
+
+      - name: Install MkDocs
+        run: pip install mkdocs-material
+
+      - name: Build site
+        run: mkdocs build
+
+      - name: Commit built site
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add site/
+          git commit -m "Build site" || echo "Nothing to commit"
+          git push
+
+  deploy:
+    needs: prepare
+    uses: cathe-org/actions/.github/workflows/deploy-docs.yml@main
+    with:
+      subdomain: ${{ needs.prepare.outputs.subdomain }}
+      site: ${{ vars.SITE }}
+      org: cathe-org
+      subdir: site
+    secrets: inherit
