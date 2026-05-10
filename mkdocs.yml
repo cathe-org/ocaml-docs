@@ -1,7 +1,5 @@
 site_name: Project Docs
 theme:
   name: material
-docs_dir: .
+docs_dir: docs
 site_dir: site
-exclude_docs: |
-  site/
