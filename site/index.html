@@ -14,16 +14,16 @@
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Function Application & Pattern Matching Demo - Project Docs</title>
+        <title>Project Docs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -42,7 +42,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#function-application-pattern-matching-demo" class="md-skip">
+        <a href="#ocaml-demos-index" class="md-skip">
           Skip to content
         </a>
       
@@ -76,7 +76,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Project Docs" class="md-header__button md-logo" aria-label="Project Docs" data-md-component="logo">
+    <a href="." title="Project Docs" class="md-header__button md-logo" aria-label="Project Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +96,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Function Application &amp; Pattern Matching Demo
+              Home
             
           </span>
         </div>
@@ -174,7 +174,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Project Docs" class="md-nav__button md-logo" aria-label="Project Docs" data-md-component="logo">
+    <a href="." title="Project Docs" class="md-nav__button md-logo" aria-label="Project Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -189,10 +189,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="." class="md-nav__link md-nav__link--active">
         
   
   
@@ -208,6 +217,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -232,75 +242,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#forward" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Forward
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#main-matter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Main Matter
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Main Matter">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#variant-type" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Variant Type
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#basics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Basics
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#continued" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Continued
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -316,87 +257,7 @@
 
 
 
-<h1 id="function-application-pattern-matching-demo">Function Application &amp; Pattern Matching Demo</h1>
-<h2 id="forward">Forward</h2>
-<p>Module type <code>Fwd_S</code> specifies three functions, <code>int</code>, <code>bool</code> and <code>string</code>, that each take an argument of the corresponding type and return a string. <em>I.e., "string-ify" functions.</em></p>
-<pre><code class="language-ocaml">module type Fwd_S = sig
-  val int : int -&gt; string
-  val bool : bool -&gt; string
-  val string : string -&gt; string
-end
-</code></pre>
-<p>Module <code>A_Fwd</code> ...</p>
-<pre><code class="language-ocaml">module A_Fwd : Fwd_S = struct
-  let int (x : int) : string = Printf.sprintf &quot;%i&quot; x
-  let bool (x : bool) : string = Printf.sprintf &quot;%b&quot; x
-  let string (x : string) : string = x
-end
-</code></pre>
-<p>Module <code>B_Fwd</code> ...</p>
-<pre><code class="language-ocaml">module B_Fwd : Fwd_S = struct
-  let int : int -&gt; string = Printf.sprintf &quot;%i&quot;
-  let bool : bool -&gt; string = Printf.sprintf &quot;%b&quot;
-  let string : string -&gt; string = fun x -&gt; x
-end
-</code></pre>
-<h2 id="main-matter">Main Matter</h2>
-<h3 id="variant-type">Variant Type</h3>
-<p>Type <code>t</code> is a variant type with constructors corresponding to <code>int</code>, <code>bool</code> and <code>string</code>. We will use this type to demonstrate different methods of function appilcation and pattern matching.</p>
-<pre><code class="language-ocaml">type t =
-  | Int of int
-  | Bool of bool
-  | String of string
-</code></pre>
-<h3 id="basics">Basics</h3>
-<p>Module type <code>F_S</code> specifies function <code>val f : t -&gt; string</code>. Therefore, any module of type <code>F_S</code> must provide a function <code>f</code> that can handle the three variants of <code>t</code> (<code>t.Int</code>, <code>t.Bool</code> and <code>t.String</code>) and return a <code>string</code>.</p>
-<pre><code class="language-ocaml">module type F_S = sig
-  val f : t -&gt; string
-end
-</code></pre>
-<p>Module <code>A_F</code> implements <code>F_S.f</code> in a straightforward way. It takes the first argument of type <code>t</code> and binds it to <code>x</code>. Next, it pattern matches on <code>x</code> to determine which variant of <code>t</code> the value of <code>x</code> is. This pattern matching provides us the opportunity to determine what to do for each variation; in this case we must provide a function for each that maps it to a <code>string</code>. <em>(If only we had functions that could do this...)</em> Notice that module <code>A_F</code> is a <em>functor</em> which takes a module argument of type <code>Fwd_S</code> and binds it to <code>X</code>. By the signature of <code>Fwd_S</code> we know that <code>X</code> implements a function for converting each of the cases of <code>t</code> to a string; <em>how convenient!</em> It just remains for us match-up the corresponding function in <code>X</code> to the pattern-matched cases of <code>x</code>.</p>
-<pre><code class="language-ocaml">module A_F (X : Fwd_S) : F_S = struct
-  let f (x : t) : string =
-    match x with
-    | Int (x : int) -&gt; X.int x
-    | Bool (x : bool) -&gt; X.bool x
-    | String (x : string) -&gt; X.string x
-  ;;
-end
-</code></pre>
-<p>Module <code>B_F</code> implements <code>F_S.f</code> is similar to <code>A_F</code>, except that it's definition of <code>F_S.f</code> skips the binding of the first argument and proceeds directly into the pattern matching, via use of the <code>function | _ -&gt; ...</code> keyword/pattern. Notice that this is reflected in the "return signature" of <code>B_F.f</code> with respect to <code>A_F.f</code>, as <code>B_F.f</code> returns a function that takes a <code>t</code> which returns a <code>string</code>, while <code>A_F.f</code> is itself a function that takes a <code>t</code> and returns a <code>string</code>. Both fulfill the signature specified by <code>F_S.f</code>.</p>
-<pre><code class="language-ocaml">module B_F (X : Fwd_S) : F_S = struct
-  let f : t -&gt; string = function
-    | Int x -&gt; X.int x
-    | Bool x -&gt; X.bool x
-    | String x -&gt; X.string x
-  ;;
-end
-</code></pre>
-<h3 id="continued">Continued</h3>
-<pre><code class="language-ocaml">module type Foo_S = sig
-  val foo : t -&gt; unit -&gt; string
-end
-
-module A (X : F_S) : Foo_S = struct
-  let foo : t -&gt; unit -&gt; string = fun (x : t) -&gt; fun () -&gt; X.f x
-end
-
-module B (X : F_S) : Foo_S = struct
-  let foo : t -&gt; unit -&gt; string = function (x : t) -&gt; fun () -&gt; X.f x
-end
-
-module C (X : F_S) : Foo_S = struct
-  let foo (x : t) : unit -&gt; string = fun () -&gt; X.f x
-end
-
-module D (X : F_S) : Foo_S = struct
-  let foo (x : t) : unit -&gt; string = function () -&gt; X.f x
-end
-
-module E (X : F_S) : Foo_S = struct
-  let foo (x : t) () : string = X.f x
-end
-</code></pre>
+<h1 id="ocaml-demos-index">ocaml demos: index</h1>
 
 
 
@@ -446,10 +307,10 @@ end
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
