@@ -4,4 +4,7 @@ theme:
 docs_dir: docs
 site_dir: site
 nav:
- - Home: index.md
+  - Home: index.md
+  - Function Application: fun_app.md
+  - Currying: currying.md
+  - Monads: monad.md
